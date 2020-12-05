@@ -3,8 +3,8 @@ import re
 import sys
 from datetime import datetime
 
-WHATSAPP_FILENAME_RE = re.compile(r"^WhatsApp (?:Video|Image) (\d{4})\-(\d{2})\-(\d{2}) " \
-                                   "at (\d{2})\.(\d{2})\.(\d{2})(?: \(\d+\))?\.(?:jpeg|mp4)$")
+WHATSAPP_FILENAME_RE = re.compile(r"^WhatsApp (?:Video|Image|Audio) (\d{4})\-(\d{2})\-(\d{2}) " \
+                                   "at (\d{2})\.(\d{2})\.(\d{2})(?: \(\d+\))?\.(?:jpeg|mp4|ogg)$")
 
 def do_file(filename):
     try:
